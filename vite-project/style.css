@@ -294,6 +294,14 @@ picture,svg {
   border: 0;
 }
 
+/* flow class */
+/* .flow > * + * {
+} */
+:where(.flow :not(:first-child)){
+  margin-top: var(--flow-space, 3rem);
+}
+
+
 /* genral styling */
 
 body {
@@ -310,6 +318,9 @@ body {
 .even-columns {
   display: grid;
   gap: 1rem;
+}
+.align-center {
+  align-items: center;
 }
 @media screen and (min-width: 50em) {
   .even-columns {
